@@ -10,7 +10,7 @@ const app = express();
 // * GET /api/v1/ingredients
 // * GET /api/v1/ingredients/:id/recipes
 // * GET /api/v1/recipes
-// GET /api/v1/recipes/:id/ingredients
+// * GET /api/v1/recipes/:id/ingredients
 // * GET /api/v1/recipes/:recipe_id/steps
 // * POST /api/v1/recipes/:recipe_id/steps
 // * POST /api/v1/recipes
@@ -234,6 +234,46 @@ app.delete('/api/v1/recipes/:id/steps', async (req, res) => {
     res
       .status(204)
       .json({ message: `Recipe id ${id} step #${steps.length} deleted` });
+  } catch (error) {
+    res.status(500).json({ error });
+  }
+});
+
+app.put('/api/v1/recipes/:recipe_id/steps/:step_num', async (req, res) => {
+  const { recipe_id, step_num } = req.params;
+  const { step_text } = req.body;
+
+  if (!step_text) {
+    res.status(422).json({ message: 'You are missing the data for the step_text' });
+    return;
+  }
+
+  try {
+    const stepIds = await database('recipe_steps').where('recipe_id', recipe_id).select();
+
+    if (!stepIds.length || !stepIds[step_num]) {
+      res.status(404).json({ message: `Recipe with id${recipe_id} does not exist` });
+      return;
+    }
+    await database('recipe_steps').where('id', stepIds[step_num].id).update({ step_text });
+
+    res.status(204).json({ message: `Successfully updated step${step_num}` });
+  } catch (error) {
+    res.status(500).json({ error });
+  }
+});
+
+app.get('/api/v1/recipes/:id/ingredients', async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const ingredientIds = await database('recipe_ingredients').where('recipe_id', id).select();
+    if (!ingredientIds.length) {
+      res.status(404).json({ message: `Recipe with id${id} does not exist.` });
+      return;
+    }
+    const ingredients = await Promise.all(ingredientIds.map(ingredient => database('ingredients').where('id', ingredient.ingredient_id).select()));
+    res.status(200).json({ ingredients });
   } catch (error) {
     res.status(500).json({ error });
   }
