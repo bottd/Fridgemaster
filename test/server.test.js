@@ -86,6 +86,7 @@ describe('server', () => {
             expect(res.body[0]).to.have.keys([
               'id',
               'recipe_name',
+              'recipe_images',
               'created_at',
               'updated_at',
             ]);
@@ -244,6 +245,7 @@ describe('server', () => {
             expect(res.body[0]).to.have.keys([
               'id',
               'recipe_name',
+              'recipe_images',
               'created_at',
               'updated_at',
             ]);
