@@ -1,0 +1,32 @@
+.endpoints {
+  display: flex;
+  margin: 20px;
+  width: 500px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+
+.verbs {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+h1 {
+  color: pink;
+}
+
+.ingredients-JSON {
+  width: 450px;
+}
+
+.url {
+  border: 1px solid black;
+  width: 400px;
+  padding: 10px;
+}
+
+.example {
+  width: 300px;
+}

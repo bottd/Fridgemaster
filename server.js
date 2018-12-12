@@ -19,7 +19,20 @@ const app = express();
 // * DELETE /api/v1/recipes/:id
 // * DELETE /api/v1/recipes/:recipe_id/steps/
 
+app.use((request, response, next) => {
+  response.header('Access-Control-Allow-Origin', '*');
+  response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+})
+
+app.get('/', (request, response) => {
+  response.sendFile('./index.html', {root: 'public' })
+})
+
+app.use(express.static('public'));
+
 app.use(express.json());
+
 app.set('port', process.env.PORT || 3000);
 
 app.get('/api/v1/ingredients', async (req, res) => {
