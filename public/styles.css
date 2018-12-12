@@ -108,6 +108,7 @@ p {
   width: 500px;
   height: 50px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 h1, h2, h3 {

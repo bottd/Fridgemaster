@@ -1,5 +1,5 @@
 function appear(e) {
-  for (let i = 0; i < 12; i ++ ){
+  for (let i = 1; i < 11; i ++ ){
     if(e.target.classList[1].includes(`${i}`)) {
       $(`.endpoint${i}`).toggleClass('appear', `.endpoint${i}`)  
     }
@@ -17,3 +17,4 @@ $('.point8').click(appear)
 $('.point9').click(appear)
 $('.point10').click(appear)
 $('.point11').click(appear)
+$('.end').click(appear)
