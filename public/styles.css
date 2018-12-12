@@ -84,6 +84,24 @@ p {
   margin: 20px 0 20px 0;
 }
 
+.endpoint1,
+.endpoint2,
+.endpoint3,
+.endpoint4,
+.endpoint5,
+.endpoint6,
+.endpoint7,
+.endpoint8,
+.endpoint9,
+.endpoint10,
+.endpoint11
+ {
+  display: none;
+}
+
+.appear {
+  display: block;
+}
 .endpoints {
   display: flex;
   margin: 20px 0 20px 0;
@@ -127,4 +145,4 @@ img{
 
 .verb-type {
   margin: 15px;
-}
+} 
