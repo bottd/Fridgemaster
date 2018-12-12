@@ -64,7 +64,24 @@ p {
 }
 
 .post {
-  background-color: #eceae5;
+  background-color: #f2bbad;
+}
+
+.put {
+  background-color: #aedfdb;
+}
+
+.delete {
+  background-color: #75c9cc;
+}
+
+.required {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.above-box {
+  margin: 20px 0 20px 0;
 }
 
 .endpoints {
