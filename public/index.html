@@ -51,13 +51,13 @@
           <li>creation timestamp</li>
           <li>update timestamp</li>
         </ul>
-        <p>Required:</p>
+        <p class='required'>Required:</p>
         <ul>
           <li>
             An id that corresponds to an ingredient present in the database must be provided in the URL to return the desired JSON.
           </li>
         </ul>
-        <p>URL with specified id:</p>
+        <p class='above-box'>URL with specified id:</p>
         <p class='url'>http://..../api/vi/ingredients/1/recipes</p>
         <p>Corresponding Ingredient: </p>
         <img class='example' src='images/corresponding-example.png'/>
@@ -98,34 +98,34 @@
       </div>
 
       <div class='endpoints'>
-        <div class='verbs'>
+        <div class='verbs put'>
           <p class='verb-type'>PUT</p>
         </div>
         <p class='end'>/api/v1/recipes/:id</p>
       </div>
       <div class='recipe-info'> 
         <p>Making an API call to this endpoint updates recipe name of the recipe with the specified id.</p>
-        <p>Required:</p>
+        <p class='required'>Required:</p>
         <ul>
           <li>An id that corresponds to a recipe present in the database must be provided in the URL.</li>
         </ul>
-        <p>URL with specified id:</p>
+        <p class='above-box'>URL with specified id:</p>
         <p class='url'>http://..../api/vi/recipes/1</p>
       </div>
 
       <div class='endpoints'>
-        <div class='verbs'>
+        <div class='verbs delete'>
           <p class='verb-type'>DELETE</p>
         </div>
         <p class='end'>/api/v1/recipes/:id</p>
       </div>
       <div class='recipe-info'> 
         <p>Making an API call to this endpoint deletes the recipe with the specified id.</p>
-        <p>Required:</p>
+        <p class='required'>Required:</p>
         <ul>
           <li>An id that corresponds to a recipe present in the database must be provided in the URL.</li>
         </ul>
-        <p>URL with specified id:</p>
+        <p class='above-box'>URL with specified id:</p>
         <p class='url'>http://..../api/vi/recipes/1</p>
       </div>
 
@@ -138,13 +138,13 @@
         </div>
         <div class='recipe-info'> 
           <p>Making an API call to this endpoint adds a recipe to the database.</p>
-          <p>Required</p>
+          <p class='required'>Required</p>
           <ul>
             <li>
               A correctly formatted recipe object must be provided in the request body in order to post to the database.
             </li>
           </ul>
-          <p>Example of correctly formatted recipe object:</p>
+          <p class='above-box'>Example of correctly formatted recipe object:</p>
           <p class='url'> { recipe_name: < STRING >, ingredients: < ARRAY >, steps: < ARRAY > }</p>
           <img class='ingredients-JSON' src='images/recipe-post.png'>
         </div>
@@ -165,13 +165,13 @@
             <li>creation timestamp</li>
             <li>update timestamp</li>
           </ul>
-          <p>Required</p>
+          <p class='required'>Required</p>
           <ul>
             <li>
               An id that corresponds to a recipe present in the database must be provided in the URL to return the desired JSON.
             </li>
           </ul>
-          <p>URL with specified id:</p>
+          <p class='above-box'>URL with specified id:</p>
           <p class='url'> http://..../api/vi/recipes/1/ingredients </p>
           <p>Corresponding Recipe: </p>
           <img class='example' src='images/corresponding-recipe.png'>
@@ -194,11 +194,11 @@
             <li>creation timestamp</li>
             <li>recipe id</li>
           </ul>
-          <p>Required</p>
+          <p class='required'>Required</p>
           <ul>
             <li>An id that corresponds to a recipe present in the database must be provided in the URL to return the desired JSON.</li>
           </ul>
-          <p>URL with specified id:</p>
+          <p class='above-box'>URL with specified id:</p>
           <p class='url'>http://..../api/vi/recipes/1/steps</p>
           <p>Corresponding recipe: </p>
           <img class='example' src='images/corresponding.png'>
@@ -214,12 +214,12 @@
         </div>
         <div class='recipe-info'> 
           <p>Making an API call to this endpoint adds a step to the recipe in the database with the specified id.</p>
-          <p>Required in the POST request: </p>
+          <p class='required'>Required in the POST request: </p>
           <ul>
             <li>An id that corresponds to a recipe present in the database must be provided in the URL.</li> 
             <li>A correctly formatted step object must be provided in the request body in order to post to the database.</li>
           </ul>
-          <p>URL with specified id:</p>
+          <p class='above-box'>URL with specified id:</p>
           <p class='url'>http://..../api/vi/recipes/1/steps</p>
           <p>Corresponding recipe: </p>
           <img class='example' src='images/corresponding-post.png'>
@@ -229,35 +229,35 @@
 
 
         <div class='endpoints'>
-          <div class='verbs'>
+          <div class='verbs delete'>
            <p class='verb-type'>DELETE</p>
           </div>
         <p class='end'>/api/v1/recipes/:id/steps</p>
         </div>
         <div class='recipe-info'> 
           <p>Making an API call to this endpoint deletes the last step of the recipe with the specified id.</p>
-          <p>Required in the POST request: </p>
+          <p class='required'>Required in the POST request: </p>
           <ul>
             <li>An id that corresponds to a recipe present in the database must be provided in the URL.</li> 
           </ul>
-          <p>URL with specified id:</p>
+          <p class='above-box'>URL with specified id:</p>
           <p class='url'>http://..../api/vi/recipes/1</p>
         </div>
 
         <div class='endpoints'>
-          <div class='verbs'>
+          <div class='verbs put'>
            <p class='verb-type'>PUT</p>
           </div>
         <p class='end ending'>/api/v1/recipes/:recipe_id/steps/:step_num</p>
         </div>
         <div class='recipe-info'> 
           <p>Making an API call to this endpoint updates specified step for a given recipe with the specified id.</p>
-          <p>Required in the POST request: </p>
+          <p class='required'>Required in the POST request: </p>
           <ul>
             <li>An id that corresponds to a recipe present in the database must be provided in the URL.</li> 
             <li>The number of the step to be updated must be provided in the URL.</li>
           </ul>
-          <p>URL with specified id:</p>
+          <p class='above-box'>URL with specified id:</p>
           <p class='url'>http://..../api/vi/recipes/1/steps/2</p>
         </div>
 
