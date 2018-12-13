@@ -40,6 +40,26 @@ Data returned for each ingredient includes:
 ]
 ```
 
+#### Querying database
+
+Including the ingredient name in the URL will return a specific ingredient. 
+
+##### Example query:
+```url
+http://..../api/v1/recipes/?ingredient_name=eggs
+```
+
+##### Example of returned JSON:
+```json
+{
+  "id": 1,
+  "ingredient_name": "eggs",
+  "aisle": "dairy",
+  "created_at": "2018-12-06T18:40:50.931Z",
+  "updated_at": "2018-12-06T18:40:50.931Z"
+}
+```
+
 --------------------------------
 ## /api/v1/ingredients/:id/recipes
 ### `GET`
