@@ -97,7 +97,6 @@ app.post('/api/v1/recipes', (req, res, next) => {
     res.status(422).json({
       message: `Missing ${missingProps} parameters {recipe_name: <STRING>, steps: <ARRAY>, ingredients: <ARRAY>}`,
     });
-    
   } else {
     next();
   }
