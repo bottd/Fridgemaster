@@ -20,7 +20,7 @@
 }
 .endpoints {
   display: flex;
-  margin: 32px 0 32px 0;
+  margin: 40px 0 40px 0;
   width: 500px;
   height: 50px;
   border: 1px solid black;
@@ -33,7 +33,7 @@
   font-size: 16px;
   display: none;
   position: absolute;
-  top: 38%;
+  top: 36%;
 }
 
 .point2-text {
@@ -42,7 +42,7 @@
   font-size: 14px;
   display: none;
   position: absolute;
-  top: 49.5%;
+  top: 48.5%;
 }
 
 .point3-text {
@@ -51,7 +51,7 @@
   font-size: 16px;
   display: none;
   position: absolute;
-  top: 78.5%;
+  top: 77%;
 }
 
 .point4-text {
@@ -60,7 +60,7 @@
   font-size: 14px;
   display: none;
   position: absolute;
-  top: 90%;
+  top: 89%;
 }
 
 .point5-text {
@@ -69,7 +69,7 @@
   font-size: 15px;
   display: none;
   position: absolute;
-  top: 101.9%;
+  top: 100.9%;
 }
 
 .point6-text {
@@ -78,7 +78,7 @@
   font-size: 16px;
   display: none;
   position: absolute;
-  top: 114%;
+  top: 115%;
 }
 
 .point7-text {
@@ -87,7 +87,7 @@
   font-size: 15px;
   display: none;
   position: absolute;
-  top: 126%;
+  top: 125.6%;
 }
 
 .point8-text {
@@ -96,7 +96,7 @@
   font-size: 14px;
   display: none;
   position: absolute;
-  top: 138%;
+  top: 137.5%;
 }
 
 .point9-text {
@@ -105,7 +105,7 @@
   font-size: 15px;
   display: none;
   position: absolute;
-  top: 149.8%;
+  top: 150.3%;
 }
 
 .point10-text {
