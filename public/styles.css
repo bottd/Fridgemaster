@@ -1,7 +1,6 @@
 * {
   margin: auto 0;
   font-family: 'Muli', sans-serif;
-  /*background-color: #f6f8fa;*/
 }
 
 .nav {
@@ -13,7 +12,118 @@
   margin: 50px 0;
   display: grid;
   justify-content: center;
-  /*max-width: 1000px;*/
+}
+
+.end {
+  font-size: 25px;
+  margin-left: 50px;
+}
+.endpoints {
+  display: flex;
+  margin: 32px 0 32px 0;
+  width: 500px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.point1-text {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  top: 38%;
+}
+
+.point2-text {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  top: 49.5%;
+}
+
+.point3-text {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  top: 78.5%;
+}
+
+.point4-text {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  top: 90%;
+}
+
+.point5-text {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  top: 101.9%;
+}
+
+.point6-text {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  top: 114%;
+}
+
+.point7-text {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  top: 126%;
+}
+
+.point8-text {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  top: 138%;
+}
+
+.point9-text {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  top: 149.8%;
+}
+
+.point10-text {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  top: 162%;
+}
+
+.point11-text {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  top: 174.5%;
 }
 
 .nav-btn {
@@ -33,10 +143,6 @@ li a:hover {
   background-color: lightgrey;
 }
 
-.end {
-  font-size: 25px;
-  margin-left: 50px;
-}
 #ingredients, .recipes {
   justify-content: center;
   align-items: center;
@@ -102,25 +208,19 @@ p {
 .appear {
   display: block;
 }
-.endpoints {
-  display: flex;
-  margin: 20px 0 20px 0;
-  width: 500px;
-  height: 50px;
-  border: 1px solid black;
-  cursor: pointer;
-}
 
 h1, h2, h3 {
   margin: 10px;
 }
-img{
+
+img {
   margin: 10px;
   width: 250px;
   padding: 10px;
   text-align: center;
   border: 3px dashed #ccc;
 }
+
 
 .verbs {
   display: flex;
